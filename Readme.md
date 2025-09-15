@@ -4,7 +4,7 @@
 
 ## Stationeers Dedicated Server using Docker
 
-_Run a Stationeers dedicated server in a single Docker container. The image auto-updates the server via SteamCMD (optional) on startup and runs the dedicated server._
+_Run a Stationeers dedicated server in a single Docker container._
 
 </div>
 
