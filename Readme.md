@@ -31,12 +31,6 @@ Docs: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 docker compose up -d --build
 ```
 
-1. Follow logs
-
-```pwsh
-docker compose logs -f
-```
-
 You're good when you see lines like:
 
 ```text
