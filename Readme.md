@@ -10,8 +10,8 @@ _Run a Stationeers dedicated server in a single Docker container._
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/1Solon/Home-Server-Configuration?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/1Solon/Home-Server-Configuration?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/1Solon/stationeers-dedicated-server-docker?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/1Solon/stationeers-dedicated-server-docker?style=for-the-badge)
 
 </div>
 
