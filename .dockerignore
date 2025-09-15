@@ -1,0 +1,15 @@
+# Ignore local data and cache
+data/gameServer/
+data/gameData/log.txt
+data/steamapps/
+data/**/temp/
+data/**/downloading/
+
+# VCS and editor
+.git
+.gitignore
+.vscode
+.DS_Store
+
+# Env files
+.env

@@ -1,0 +1,29 @@
+services:
+  stationeers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: stationeers-dedicated:local
+    env_file:
+      - .env
+    environment:
+      TZ: ${TZ:-America/Los_Angeles}
+      AUTO_UPDATE: ${AUTO_UPDATE:-true}
+      GAME_PORT: ${GAME_PORT:-27016}
+      LOG_TO_STDOUT: ${LOG_TO_STDOUT:-false}
+    ports:
+      - "${GAME_PORT:-27016}:27016/tcp"
+      - "${GAME_PORT:-27016}:27016/udp"
+    volumes:
+      - ./data:/stationeers
+    restart: unless-stopped
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "grep -q 'loaded .* systems successfully' /stationeers/gameData/log.txt || exit 1",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 10
+      start_period: 60s

@@ -1,0 +1,6 @@
+# Normalize line endings
+* text=auto
+
+# Ensure shell scripts use LF in repo (Docker/Linux friendly)
+*.sh text eol=lf# Ensure shell scripts use LF endings even on Windows
+*.sh text eol=lf
