@@ -27,13 +27,13 @@ Docs: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 1. Copy `.env.example` to `.env` and tweak values if needed
 2. Build and start
 
-```pwsh
+```ps
 docker compose up -d --build
 ```
 
 You're good when you see lines like:
 
-```text
+```ps
 stationeers-1  | Version : 0.2.x
 stationeers-1  | Loading settings: /stationeers/gameData/settings.xml
 stationeers-1  | loaded 46 systems successfully
