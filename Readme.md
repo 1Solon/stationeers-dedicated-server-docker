@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.itch.zone/aW1nLzk0NDUyMzAucG5n/original/%2Fo3Jmj.png" align="center" width="144px" height="144px"/>
+<img src="https://img.itch.zone/aW1nLzk0NDUyMzAucG5n/original/%2Fo3Jmj.png" align="center"/>
 
 ## Stationeers Dedicated Server using Docker
 
