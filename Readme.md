@@ -24,11 +24,12 @@ Docs: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 
 ## Quick start
 
-1. Copy `.env.example` to `.env` and tweak values if needed
-2. Build and start
+1. Copy the docker-compose, or pull the github repo
+2. Copy `.env.example` to `.env` and tweak values if needed
+3. Start with the below command:
 
 ```ps
-docker compose up -d --build
+docker compose up -d
 ```
 
 You're good when you see lines like:
