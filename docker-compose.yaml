@@ -1,6 +1,7 @@
 services:
   stationeers:
     image: ghcr.io/1solon/stationeers-dedicated-server-docker:latest
+    build: .
     env_file:
       - .env
     environment:

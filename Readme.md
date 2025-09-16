@@ -63,6 +63,10 @@ Advanced users can also adjust `DATA_DIR`, `EXECUTABLE`, `SETTINGS_PATH`, `SAVE_
 
 By default, the container runs SteamCMD on startup to install/update the dedicated server into the mounted `/stationeers/gameServer` folder. To disable, set `AUTO_UPDATE=false` in `.env`.
 
+Notes:
+- Validation can be slow. To skip validation on each start, set `STEAMCMD_VALIDATE=false`.
+- If SteamCMD reports a non-fatal error (e.g., state 0x6) but server files already exist, the container will proceed to start the server. It retries once automatically.
+
 ## Healthcheck
 
 The `stationeers` service is considered healthy when it finds the "loaded .* systems successfully" line in the file log. If you enable `LOG_TO_STDOUT=true`, either disable the healthcheck or change it to something like a port check:
@@ -87,3 +91,4 @@ healthcheck:
 - Server not visible: check port forwarding and that `SERVER_VISIBLE=true`. Try disabling `UPNP_ENABLED` if your network blocks it.
 - Connection issues: verify both TCP and UDP `GAME_PORT` are open on your host/firewall.
 - Many warnings in log: Stationeers server is chatty; warnings are often expected.
+- SteamCMD state 0x6 after update job: often transient. We retry once and, if files are present, continue. Consider setting `STEAMCMD_VALIDATE=false` to reduce chances of transient validate failures if you trust your files.
