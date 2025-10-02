@@ -1,3 +1,5 @@
+> ⚠️ **Deprecated:** This project is no longer maintained. Please use my new container on the [SteamServerUI/StationeersServerUI](https://github.com/SteamServerUI/StationeersServerUI) Project.
+
 <div align="center">
 
 <img src="https://stationeers-wiki.com/resources/assets/stationeers-wiki.png" align="center" width="144px" height="144px"/>
